@@ -31,6 +31,8 @@ const formAction = (msg, event, id, question, answer) => {
             </div>
             <button type= 'button' class = 'btn btn-primary' quizid="${id}" name = "${event}"> Guardar </button>
        <form>
+       <hr>
+       <button type= 'button' class = 'btn btn-secondary btn-block' name = "back"> Regresar </button>
     `;
     return frm;
 }
@@ -41,7 +43,7 @@ const play = (id, question) => {
     <form class = "form">
             <div class="form-group">
                 <label for = 'answer'>${question}:</label>
-                <input type='text' class = 'form-control' placeholder = 'Type answer' id = 'answer' autofocus>
+                <input type='text' class = 'form-control' placeholder = 'Type question' id = 'answer' autofocus>
             </div>
             <span id = 'response'></span>
             <button type= 'button' class = 'btn btn-primary btn-block' quizid="${id}" name = "check"> Enviar </button>
