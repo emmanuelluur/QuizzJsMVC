@@ -21,7 +21,7 @@ const index = (item) => {
 const formAction = (msg, event, id, question, answer) => {
     let frm;
     frm = `
-    <p><strong>${$msg}</strong><p>
+    <p><strong>${msg}</strong><p>
     <form class = "form">
             <div class="form-group">
                 <input type='text' class = 'form-control' placeholder = 'Type answer' id = 'question' value = '${question}' autofocus>

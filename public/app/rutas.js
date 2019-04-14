@@ -16,7 +16,10 @@ const Routes = () => {
             console.log("verificando...");
             checkController(el.target.getAttribute("quizid"))
         }
-
+        if (el.target.getAttribute("name") == "edit") {
+            console.log("cargando datos...");
+            editController(el.target.getAttribute("quizid"))
+        }
     })
 }
 
