@@ -28,7 +28,8 @@
     </nav>
     <div class="container-fluid">
         <div class="col-sm-6">
-            <h1>Preguntas</h1></h1>
+            <h1>Preguntas</h1>
+            </h1>
             <id id="main"></id>
         </div>
     </div>
@@ -42,10 +43,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="./app/model/PreguntasModel.js"></script>
+    <script src="./app/model/PreguntasModel.js"></script>
+    <script src="./app/controller/PreguntasController.js"></script>
+    <script src="./app/views/views.js"></script>
     <script type="text/javascript">
-        console.log(Preguntas)
+        document.addEventListener("DOMContentLoaded", function () {
+            indexController();
+        });
     </script>
+
 </body>
 
 </html>

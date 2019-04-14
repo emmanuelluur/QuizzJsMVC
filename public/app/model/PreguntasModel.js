@@ -5,3 +5,8 @@ const Preguntas =
     { question: "Capital of Spain",    answer: "Madrid" },
     { question: "Capital of Portugal", answer: "Lisbon" }
 ];
+
+
+
+//  Genera archivo local en navegador
+//localStorage.preguntas = localStorage.preguntas || JSON.stringify(Preguntas);
