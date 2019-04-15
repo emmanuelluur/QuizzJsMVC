@@ -61,5 +61,25 @@ const deleteController = id => {
 }
 
 const resetController = () => {
-    location.reload();
+
+    new Promise((resolve)=>{
+        Preguntas = '';
+        let data = [ 
+            { question: "Capital of Italy",    answer: "Rome" },
+            { question: "Capital of France",   answer: "Paris" },
+            { question: "Capital of Spain",    answer: "Madrid" },
+            { question: "Capital of Portugal", answer: "Lisbon" }
+        ];
+        resolve(data);
+    })
+    .then(response => {
+        Preguntas = response;
+    })
+    .then(()=>{
+        console.log("Respuestas reestablecidas");
+        indexController()
+    })
+
+
+    
 }
